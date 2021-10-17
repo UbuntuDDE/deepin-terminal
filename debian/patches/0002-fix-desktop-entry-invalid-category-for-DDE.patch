@@ -1,0 +1,19 @@
+From: Arun Kumar Pariyar <openarungeek@gmail.com>
+Date: Thu, 9 Jul 2020 00:06:08 +0545
+Subject: [PATCH] fix desktop-entry-invalid-category for DDE
+
+---
+ src/deepin-terminal.desktop | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: deepin-terminal/src/deepin-terminal.desktop
+===================================================================
+--- deepin-terminal.orig/src/deepin-terminal.desktop
++++ deepin-terminal/src/deepin-terminal.desktop
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-Categories=DDE;Utility;System;TerminalEmulator;
++Categories=X-DDE;Utility;System;TerminalEmulator;
+ Comment=Use the command line
+ Exec=deepin-terminal
+ GenericName=Terminal

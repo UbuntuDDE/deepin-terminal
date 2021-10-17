@@ -1,33 +1,37 @@
 Source: deepin-terminal
 Section: utils
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.org>
+Maintainer: Ananta Mishra <mishraananta2017@gmail.com>
+XSBC-Original-Maintainer: Deepin Packages Builder <packages@deepin.org>
 Build-Depends:
- debhelper(>= 11),
+ chrpath,
  cmake,
- pkg-config,
- qtbase5-dev,
- qttools5-dev-tools,
- qtbase5-private-dev,
- libdtkwidget-dev,
+ debhelper-compat (= 13),
+ libatspi2.0-dev,
  libdframeworkdbus-dev,
- lxqt-build-tools(>= 0.6.0~),
- libutf8proc-dev,
+ libdtkwidget-dev(>=5.5~),
  libglib2.0-dev,
- libsecret-1-dev,
- libgtest-dev,
  libgmock-dev,
- libxcb-ewmh-dev
+ libgtest-dev,
+ libsecret-1-dev,
+ libutf8proc-dev,
+ libxcb-ewmh-dev,
+ lxqt-build-tools (>= 0.6.0~),
+ pkg-config,
+ qt5-qmake,
+ qtbase5-dev,
+ qtbase5-private-dev,
+ qttools5-dev-tools,
 Standards-Version: 4.5.1
 Homepage: https://www.deepin.com/
 
 Package: deepin-terminal
 Architecture: any
 Depends:
- ${shlibs:Depends},
- ${misc:Depends},
  expect,
- zssh
+ zssh,
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: Terminal is an advanced terminal emulator with workspace, multiple
  windows, remote management, quake mode and other features.
  Terminal is a terminal emulator with simple interface, rich and powerful
